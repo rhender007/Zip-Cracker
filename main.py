@@ -29,7 +29,10 @@ def main():
         
     zipfilename = sys.argv[1]
     max_length = int(sys.argv[2])
-            
+           
+
+    print("Here is the arg: " + constants.DICTIONARY_ATTACK)
+
     # decide attack type
     if constants.DICTIONARY_ATTACK in ''.join(sys.argv[3:]):
         print "Chosen attack type: DICTIONARY\n"
@@ -58,7 +61,7 @@ def main():
     # crack pswd
     pswd = cracker.crack() 
     if pswd is not None:
-        print constants.FOUND_MSG
+        print pswd #constants.FOUND_MSG
     else:
         print constants.NOT_FOUND_MSG
     
