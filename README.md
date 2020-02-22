@@ -13,6 +13,7 @@ python main.py <zip file> <max_length> [<-u UPPERCASE> <-l LOWERCASE> <-d digits
 
 For Dictionary:
 python main.py <zip file> <max_length> [<-d DICTIONARRY ATTACK> <dict file>]
+python main.py ~/Downloads/a.zip 1000000 -dict ~/Downloads/Zip-Cracker/dict.txt
 ```
 
 ## Algorithms
